@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="http://cdn.bootcss.com/angular.js/1.5.5/angular.js"></script>
+    <script type="text/javascript" src="scripts/bower-angular-translate-2.9.0.1/angular-translate.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</head>
+<body ng-controller="mainCtrl">
+    <button ng-repeat="option in data.lang" ng-click="changeLanguage(option.value)">{{option.name}}</button>
+    <h1 translate="{{data.title.translateKey}}"></h1>
+    <select>
+        <option ng-repeat="option in data.gender" value="{{option.value}}" translate="{{option.translateKey}}"></option>
+    </select>
+    <ul>
+        <li ng-repeat="todo in todos">  
+            {{todo.text}} - <em>{{todo.done}}</em>
+        </li>
+    </ul>
+</body>
+</html>

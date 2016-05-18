@@ -1,0 +1,29 @@
+﻿{
+  "lang": [
+    {
+      "name": "English",
+      "value": "en"
+    },
+    {
+      "name": "Chinese",
+      "value": "cn"
+    }
+  ],
+  "title": {
+    "name": "title",
+    "value": "title",
+    "translateKey": "TITLE_TXT"
+  },
+  "gender": [
+    {
+      "name": "female",
+      "value": "female",
+      "translateKey": "GENDER_FEMALE"
+    },
+    {
+      "name": "male",
+      "value": "male",
+      "translateKey": "GENDER_MALE"
+    }
+  ]
+}
